@@ -28,7 +28,7 @@ const MeetingSummarizer = () => {
 
     setIsGenerating(true);
     try {
-      const response = await fetch("/api/summarize", {
+      const response = await fetch("/functions/v1/summarize", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -81,7 +81,7 @@ const MeetingSummarizer = () => {
 
     setIsSending(true);
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/functions/v1/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
