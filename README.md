@@ -1,73 +1,73 @@
-# Welcome to your Lovable project
+# 📝 AI-Powered Meeting Notes Summarizer
 
-## Project info
+This is a **full-stack application** that lets you upload meeting transcripts, generate AI-powered summaries based on custom instructions, edit them, and share the results via email.
 
-**URL**: https://lovable.dev/projects/5a1d8b2a-dc7d-4ed0-9c36-9ce5fe17ccaf
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- 📂 Upload a meeting transcript (text file / pasted notes).
+- ✍️ Input a **custom prompt** (e.g., "Summarize in bullet points for executives", "Highlight action items").
+- 🤖 AI-powered **summary generation**.
+- 📝 Editable summaries before sharing.
+- 📧 Share the summary via **email**.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5a1d8b2a-dc7d-4ed0-9c36-9ce5fe17ccaf) and start prompting.
+## 📂 Project Structure
 
-Changes made via Lovable will be committed automatically to this repo.
+├── public/ # Static assets
+│ ├── favicon.ico
+│ ├── placeholder.svg
+│ └── robots.txt
+├── src/ # Application source
+│ ├── components/ # React components
+│ │ ├── ui/ # UI building blocks
+│ │ └── MeetingSummarizer.tsx
+│ ├── hooks/ # Custom React hooks
+│ │ ├── use-mobile.tsx
+│ │ └── use-toast.tsx
+│ ├── lib/ # Utility libraries
+│ │ └── utils.ts
+│ ├── pages/ # Application pages
+│ │ ├── Index.tsx
+│ │ └── NotFound.tsx
+│ ├── supabase/functions # Supabase Edge Functions
+│ │ ├── send-email/ # Email sending function
+│ │ └── summarize/ # AI summarization function
+│ ├── App.tsx
+│ ├── main.tsx
+│ ├── index.css
+│ └── vite-env.d.ts
+├── .gitignore
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.ts
+├── tsconfig.json
+├── vite.config.ts
+└── README.md 
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Frontend:** React + Vite + TypeScript + TailwindCSS  
+- **Backend:** Supabase Edge Functions  
+- **AI Summarization:** OpenAI API (or similar LLM provider)  
+- **Email Delivery:** Supabase function (`send-email`)  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## ⚡ Getting Started
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+npm install
+npm run dev 
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/5a1d8b2a-dc7d-4ed0-9c36-9ce5fe17ccaf) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
